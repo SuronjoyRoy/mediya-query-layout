@@ -1,0 +1,43 @@
+
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.all-my-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+}
+.singl-car img {
+    width: 100%;
+}
+.singl-car {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+
+
+
+/* Responsive media query */
+
+
+@media screen and (max-width:992px) {
+    .all-my-card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .all-my-card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:576px) {
+    .all-my-card{
+        display: flex;
+        flex-direction: column;
+    }
+}
